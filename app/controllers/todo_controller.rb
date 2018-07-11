@@ -3,6 +3,7 @@ class TodoController < ApplicationController
     end
     def show
         @todo_description = "Eat k"
+        @todo =Todo.find_by_id(params[:id])
         @todo_pomodoro_estimate = "0"
         todo_id = params[:id]
         if todo_id == '1'
@@ -11,6 +12,9 @@ class TodoController < ApplicationController
         elsif todo_id == '5'
             @todo_description = 'hello' 
             @todo_pomodoro_estimate = '8'
+    
+    def new
+            end
         end
     end
 end
