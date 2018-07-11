@@ -1,8 +1,77 @@
 <html>
+
     <head>
-        <title></title>
+
+        <title>Kazu's ToDo_List</title>
+
+        <link rel="stylesheet" href="index.css" />
+
+            <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+        <script type="text/javascript" src="index.js"> </script>
+
     </head>
+
     <body>
-         <h1><b>GO AWAY</b></h1>
+
+        <h1><b>Todo_list</b></h1>
+
+        <ul>
+
+            <li>
+
+            <input type = "checkbox"><a href ="show.html"> Finish My Todo_list</a>
+
+            <span class ="pomodoro-time"> 3 Pomodoros</span>
+
+            </li>
+
+            <li>
+
+            <input type = "checkbox">
+
+            <a href ="show.html"> Eat Dinner </a>
+
+            <span class ="pomodoro-time">2 Pomodoros</span>
+
+            </li>
+
+            <li>
+
+            <input type = "checkbox">
+
+            <a href ="show.html"> Drink Water </a>
+
+            <span class ="pomodoro-time"> <%= 1+1%> Pomodoros </span>
+
+            </li>
+
+            <li>
+
+            <input type = "checkbox">
+
+            <a href ="show.html"> Play Games</a>
+
+            <span class ="pomodoro-time"><%=3+1%> Pomodoros</span>
+
+            </li>
+
+            
+
+        
+
+        </ul>
+
+        <div id = "to-do-block">
+
+      <input  class= "text-input" type = "text" id= "new-todo" placeholder = "add a now todo">   
+
+      <input  class= "text-input" type ="number" id= "new-number" placeholder = "add Pomodoros">
+
+      <input id ="add-new-todo-button" type ="submit" value = "Add todo">
+
+      </div>
+
     </body>
+
 </html>
