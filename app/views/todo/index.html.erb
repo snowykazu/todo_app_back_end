@@ -1,67 +1,54 @@
-<html>
 
-    <head>
+<h1><b>Todo_list</b></h1>
 
-        <title>Kazu's ToDo_List</title>
+<ul>
 
-        <link rel="stylesheet" href="index.css" />
+    <li>
 
-            <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <input type = "checkbox"><a href ="show/1"> Finish My Todo_list</a>
 
-        <script type="text/javascript" src="index.js"> </script>
+    <span class ="pomodoro-time"> 3 Pomodoros</span>
 
-    </head>
+    </li>
 
-    <body>
+    <li>
 
-        <h1><b>Todo_list</b></h1>
+    <input type = "checkbox">
 
-        <ul>
+    <a href ="show/2"> Eat Dinner </a>
 
-            <li>
+    <span class ="pomodoro-time">2 Pomodoros</span>
 
-            <input type = "checkbox"><a href ="show/1"> Finish My Todo_list</a>
+    </li>
 
-            <span class ="pomodoro-time"> 3 Pomodoros</span>
+    <li>
 
-            </li>
+    <input type = "checkbox">
 
-            <li>
+    <a href ="show/3"> Drink Water </a>
 
-            <input type = "checkbox">
+    <span class ="pomodoro-time"> <%= 1+1%> Pomodoros </span>
 
-            <a href ="show/2"> Eat Dinner </a>
+    </li>
 
-            <span class ="pomodoro-time">2 Pomodoros</span>
+    <li>
 
-            </li>
+    <input type = "checkbox">
 
-            <li>
+    <a href ="show/4"> Play Games</a>
 
-            <input type = "checkbox">
+    <span class ="pomodoro-time"><%=3+1%> Pomodoros</span>
 
-            <a href ="show/3"> Drink Water </a>
+    </li>
 
-            <span class ="pomodoro-time"> <%= 1+1%> Pomodoros </span>
+    
 
-            </li>
 
-            <li>
 
-            <input type = "checkbox">
-
-            <a href ="show/4"> Play Games</a>
-
-            <span class ="pomodoro-time"><%=3+1%> Pomodoros</span>
-
-            </li>
-
-            
-
-        
-
-        </ul>
-
-    </body>
-
-</html>
+</ul>
+ 
+<div>
+      <input  class= "text-input" type = "text" id= "new-todo" placeholder = "add a now todo">   
+     <input  class= "text-input" type ="number" id= "new-number" placeholder = "add Pomodoros">
+     <input id ="add-new-todo-button" type ="submit" value = "Add todo">
+</div>
